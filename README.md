@@ -2,7 +2,7 @@
 
 **Identify TF regulators for human gene modules.**
 
-The EXPLICIT-Human package is developed based on the [EXPLICIT](https://github.com/MaShisongLab/explicit) package we published previously ([Geng *et al.* 2021](https://github.com/MaShisongLab/explicit-human#Reference)). It first constructs a gene expression predictor for human, which uses the expression of 1,613 TF genes to predict the expression of 23,346 non-TF genes. For every TF gene, it also predicts the gene's expression value using the expression values of all other 1,612 TF genes. The model then infers potential TF regulators for both non-TF and TF genes, as well as for gene modules participating in diverse human pathways. The EXPLICIT-Human package is a tool for users to infer potential TF regulators for their own gene modules of interest. For more information, please refer to [Wang et al, 2022](https://github.com/MaShisongLab/explicit-human#References). 
+The EXPLICIT-Human package is developed based on the [EXPLICIT](https://github.com/MaShisongLab/explicit) package we published previously ([Geng *et al.* 2021](https://github.com/MaShisongLab/explicit-human#References)). It first constructs a gene expression predictor for human, which uses the expression of 1,613 TF genes to predict the expression of 23,346 non-TF genes. For every TF gene, it also predicts the gene's expression value using the expression values of all other 1,612 TF genes. The model then infers potential TF regulators for both non-TF and TF genes, as well as for gene modules participating in diverse human pathways. The EXPLICIT-Human package is a tool for users to infer potential TF regulators for their own gene modules of interest. For more information, please refer to [Wang et al, 2022](https://github.com/MaShisongLab/explicit-human#References). 
 
 ## Table of Contents
 - [Install](https://github.com/MaShisongLab/explicit-human#Install)
@@ -10,7 +10,7 @@ The EXPLICIT-Human package is developed based on the [EXPLICIT](https://github.c
    - Identify TF regulators for human gene modules
    - Visualize TF-target gene interactions using Chord diagrams
    - Build a custom gene expression predictor
-- [References](https://github.com/MaShisongLab/explicit-human#Reference)
+- [References](https://github.com/MaShisongLab/explicit-human#References)
 
 ## Install
 [Perl](https://www.activestate.com/products/perl/downloads/), [R](https://www.r-project.org/), and the [circlize](https://www.rdocumentation.org/packages/circlize/) package in R are required for the package. [MATLAB](https://www.mathworks.com/products/matlab.html) is required only for building custom gene expression predictors. Once these softwares are installed, just download the package and start using it.
@@ -74,11 +74,11 @@ We used a human gene expression matrix extracted from the ARCHS4 database ([Lach
 
 ```shell
 human_expression_extracted_from_archs4_v7.h5
-  +- expression  					(59,097 samples [row] X 24,959 genes [column])
-  +- gene_name						(24,959 genes)
-  +- sample_geo_accession			(59,097 samples)
-  +- idx_tf_gene					(specify TF genes used for model construction)
-  +- idx_non_tf_gene 				(specify non-TF genes used for model construction)
+  ├─ expression  					(59,097 samples [row] X 24,959 genes [column])
+  ├─ gene_name						(24,959 genes)
+  ├─ sample_geo_accession			(59,097 samples)
+  ├─ idx_tf_gene					(specify TF genes used for model construction)
+  └─ idx_non_tf_gene 				(specify non-TF genes used for model construction)
 ```
 
 Download the file `human_expression_extracted_from_archs4_v7.h5` from [Figshare](https://figshare.com/s/ec58e5b149c3060e1a6f) and place it in the home directory of the EXPLICIT-Human package. Build the EXPLICIT-Human model using the following commands within MATLAB.
@@ -369,7 +369,7 @@ Choi J, Baldwin TM, Wong M, Bolden JE, Fairfax KA, Lucas EC, Cole R, Biben C, Mo
 
 Geng H, Wang M, Gong J, Xu Y, and Ma S. 2021. An Arabidopsis expression predictor enables inference of transcriptional regulators for gene modules. Plant J  107:597-612.
 
-Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Wang L, Silverstein MC, and Ma�ayan A. 2018. Massive mining of publicly available RNA-seq data from human and mouse. Nature Communications  9:1366.
+Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Wang L, Silverstein MC, and Ma'ayan A. 2018. Massive mining of publicly available RNA-seq data from human and mouse. Nature Communications  9:1366.
 
 Wang Y, Zhang Y, Yu N, Li B, Gong J, Mei Y, Bao J, Ma S. 2022. Decoding transcriptional regulation via a human gene expression predictor. *submitted* 
 
