@@ -74,10 +74,10 @@ We used a human gene expression matrix extracted from the ARCHS4 database ([Lach
 
 ```shell
 human_expression_extracted_from_archs4_v7.h5
-  ├─ expression  					(59,097 samples [row] X 24,959 genes [column])
-  ├─ gene_name						(24,959 genes)
+  ├─ expression  				(59,097 samples [row] X 24,959 genes [column])
+  ├─ gene_name					(24,959 genes)
   ├─ sample_geo_accession			(59,097 samples)
-  ├─ idx_tf_gene					(specify TF genes used for model construction)
+  ├─ idx_tf_gene				(specify TF genes used for model construction)
   └─ idx_non_tf_gene 				(specify non-TF genes used for model construction)
 ```
 
